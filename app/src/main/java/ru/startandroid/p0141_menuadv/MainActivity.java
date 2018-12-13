@@ -28,16 +28,7 @@ public class MainActivity extends AppCompatActivity {
     // создание меню
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // TODO Auto-generated method stub
-        // добавляем пункты меню
-        menu.add(0, 1, 0, "add");
-        menu.add(0, 2, 0, "edit");
-        menu.add(0, 3, 4, "delete");
-        menu.add(1, 4, 1, "copy");
-        menu.add(1, 5, 3, "paste");
-        menu.add(1, 6, 5, "exit");
-        menu.add(1, 7, 2, "cut");
-
+        getMenuInflater().inflate(R.menu.mymenu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
